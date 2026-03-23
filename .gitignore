@@ -1,0 +1,57 @@
+# IDE / tool config
+.claude/
+
+# Data and weights (download externally)
+data/
+weights_pretrained/
+weights_final/
+
+# Experiment logs
+wandb/
+
+# Python cache
+**/__pycache__/**
+*.pyc
+
+# Jupyter notebooks
+*.ipynb
+.ipynb_checkpoints/
+
+# Experiment artifacts (kept locally, not in public repo)
+visualization/
+equiv_test/
+notebooks/
+rebuttal_utils/
+rot_analysis/
+rot_center_scores.pt
+rot_annotations/
+rot_center_visualization/
+
+# Paper source
+ICCV_arXiv/
+
+# Dated experiment configs and scripts
+configs/Feb*/
+configs/Mar*/
+scripts/Feb*/
+scripts/Mar*/
+
+# Unused dataset/utility scripts
+dataset/wireframe/
+dataset/custom_dataset.py
+
+# Non-equivariant baseline (not part of paper)
+dataset/dendi/dendi_dataset_nonequiv.py
+network/ref_sym.py
+network/backbone/non_equiv_backbone.py
+network/backbone/equiv_backbone/re_resnet_redet.py
+network/backbone/equiv_backbone/registry.py
+network/backbone/equiv_backbone/builder.py
+
+# Legacy / unused directories
+figs*/
+seg_eval/
+jupyter_notebooks/
+train_script/
+loy2006/
+OF_weights/

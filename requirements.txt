@@ -1,0 +1,10 @@
+torch>=2.0
+torchvision>=0.15
+e2cnn==0.2.3
+albumentations
+opencv-python
+scipy
+numpy
+tqdm
+wandb
+mmengine
