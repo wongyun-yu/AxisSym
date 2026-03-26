@@ -1,4 +1,4 @@
-# AxisSym: Axis-level Symmetry Detection with Group-Equivariant Representation
+# Axis-level Symmetry Detection with Group-Equivariant Representation
 
 Official implementation of **"Axis-level Symmetry Detection with Group-Equivariant Representation"** (ICCV 2025).
 
