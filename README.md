@@ -21,41 +21,6 @@ pip install -r requirements.txt
 
 **Requirements:** Python 3.10+, PyTorch 2.0+, CUDA 12.x
 
-## Data Preparation
-
-Download the datasets and place them under `data/`:
-
-| Dataset | Description | Download |
-|---------|-------------|----------|
-| DENDI   | Primary training/evaluation dataset | [Link] |
-| LDRS    | Cross-dataset evaluation | [Link] |
-| SDRW    | Cross-dataset evaluation | [Link] |
-
-Expected directory structure:
-```
-data/
-├── dendi/
-│   ├── symmetry/          # images
-│   ├── train_rot_final.json
-│   ├── val_rot_final.json
-│   └── test_rot_final.json
-├── dendi_synthetic_rot_654654_233455/  # augmented training data
-│   └── train_test_val_rot_final.json
-├── LDRS/                  # LDRS images
-├── SDRW/                  # SDRW images
-├── LDRS_annotations_test.json
-├── SDRW_annotations_test.json
-└── cat_LDRS_SDRW_annotations_train_revised.json
-```
-
-## Pretrained Model
-
-Download the pretrained model and place it in `weights/`:
-
-| Model | Ref sAP@15 | Rot Center sAP@15 | Rot Fold sAP@15 | Download |
-|-------|------------|-------------------|-----------------|----------|
-| AxisSym (D8, ResNet-34) | 24.7 | 40.0 | 28.9 | [best_model.pt](weights/best_model.pt) |
-
 ## Training
 
 ```bash
